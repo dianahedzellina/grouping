@@ -1,0 +1,405 @@
+<html>
+<head>
+	<title>RECIPEE</title>
+	<style>
+	body {margin: 0;
+			padding: 0;}
+ header {
+    background-image: url('gmbr/cookies.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #887341; 
+}
+			.main-header {
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;}
+
+			.left-section {
+			display: flex;
+			align-items: center;}
+
+			.logo {height: 50px;
+			width: 50px;
+			margin-right: 10px;}
+
+			.brand-name {
+			font-family: 'Segoe UI', Tahoma, 
+			Geneva, Verdana, sans-serif;
+			color: #776d4b;
+			font-size: 18px;}
+
+			nav {
+			flex-grow: 1;
+			text-align: center;}
+
+			ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;}
+
+			li {margin-right: 15px;}
+
+			a {text-decoration: none;
+			color: #776d4b;
+			font-weight: bold;}
+			
+			.right-section {
+			text-align: right;}
+
+			.order-button {
+			background-color: #ffffff;
+			padding: 10px 40px;
+			border: none;
+			border-radius: 8px;
+			color: #776d4b;
+			text-decoration: none;
+			font-weight: bold;
+			cursor: pointer;}
+
+			.dropdown {
+			display: inline-block;
+			position: relative;}
+
+			.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #776d4b;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;}
+
+			.dropdown-content a {
+			color: #333;
+			padding: 1px 10px;
+			display: block;
+			text-decoration: none;}
+
+			.dropdown-content a:hover {
+			background-color: #ddd;}
+
+			.dropdown:hover .dropdown-content {
+			display: block;}
+
+			.bottom-header {
+			background-color: #776d4b; 
+			padding: 70px;
+			text-align: center;}
+
+			.bottom-brand {
+			color: white;
+			font-size: 54px;
+			font-weight: bold;}
+		  
+			.contact-box {
+			background-color: #776d4b;
+			color: #ffffff;
+			border: none;
+			border-radius: 40px;
+			padding: 30px;
+			margin-top: 80px;
+			text-align: center;
+			margin-left: 10%; 
+			margin-right: 60%;}
+
+			.contact-details {
+			font-size: 18px;
+			line-height: 1.5;}
+	
+			.image-container {
+			position: absolute;
+			top: 280px; 
+			right: 4%; 
+			overflow: hidden;}
+
+			.logo-with-transition {
+			height: 650px;
+			width: auto;
+			transition: transform 0.3s ease-in-out;}
+
+			.logo-with-transition:hover {
+			transform: scale(1.1); }
+
+			.get-in-touch {
+			margin: 140px;
+			border-radius: 10px;}
+
+			.get-in-touch h2 {
+			color: #887341;}
+
+			.get-in-touch p {
+			color: #555;}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  margin-bottom: 10px;
+  color: #887341;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #887341;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px; /* Add margin-top to create space above the submit button */
+}
+
+.submit-button:hover {
+  background-color: #6c5f37;
+}
+	.information-section {
+      background-color: #776d4b; 
+      padding: 70px;
+      text-align: center;
+    }
+  text-align: center;
+}
+
+.information-section h2 {
+  color: #776d4b;
+  margin-bottom: 10px;
+}
+
+.information-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.information-section li {
+  margin-bottom: 10px;
+}
+
+.information-section a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.information-section a:hover {
+  color: #6c5f37;
+}
+section { padding: 20px;}
+		h3 { color: #776d4b;}
+      h2 { color: #776d4b; }
+        header {
+            background-color: #FFFFFF; 
+            color: #ffffff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+		
+        .recipe-box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            margin: 20px;
+            border: 2px solid #4b004f;
+            transition: transform 0.3s;
+        }
+
+        .recipe-box:hover {
+            transform: scale(1.1);
+        }
+
+        .recipe-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .recipe-content {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .recipe-title {
+            color: #4b004f;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .recipe-details {
+            font-size: 14px;
+        }
+		
+		table, th, td {
+  border:0px solid black;
+}
+	
+        .recipe-box {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            width: 300px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #FFFFFF; 
+            font-size: 24px;
+			font-family: Congenial Black, sans-serif;
+            margin-bottom: 10px;
+        }
+
+        table, th, td {
+  border:0px solid black;
+}
+         .recipe-details {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.recipe-details p {
+    margin: 5px 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4b004f;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #887341;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content div {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content div:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e0050;
+}
+
+	</style>
+	
+	
+	</head>
+
+<body>
+
+<header class="main-header">
+    <div class="left-section">
+      <img src="images/logocookies.png" alt="Logo" class="logo">
+      <div class="brand-name">𝓒𝓻𝓪𝓿𝓮𝓑𝓲𝓽𝓮</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="recipee.html">Recipe</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="right-section">
+      <div class="dropdown">
+        <a href="#" class="order-button">Order Now</a>
+        <div class="dropdown-content">
+          <a href="https://www.foodpanda.my/?utm_source=google&utm_medium=cpc&utm_campaign=17496549995&sem_tracker=17496549995&gad_source=1&gclid=Cj0KCQiAkeSsBhDUARIsAK3tiefveYLpjwwEDWB442pZfUnW6clvmdOl06kysy4s8w6PgH7jm5lLNs4aAmUrEALw_wcB" target="_blank">FoodPanda</a>
+          <a href="https://food.grab.com/my/en/?pid=website&c=MY_NA_PAX_GF_ALL_LOC__PAXFOOD_NA_PAXFOODBOOKNOW&is_retargeting=true&af_force_deeplink=true&af_sub5=organic&af_ad=PAXFOODBOOKNOW" target="_blank">GrabFood</a>
+        </div>
+      </div>
+    </div>
+  </header>
+<br></br>
+
+<table border="0" align="center">
+  <tr>
+    <td><a href="hazelnut.html">
+                <div class="recipe-box">
+                    <img src="gmbr/picture2.jpg" alt="Hazelnut Cookies" class="recipe-image">
+                    <div class="recipe-content">
+                        <h2>Recipe by CraveBite<h2>
+						<h3>HAZELNUT</h3>
+                    </div>
+                </div></td>
+				
+    <td><a href="matcha.html">
+                <div class="recipe-box">
+                    <img src="gmbr/picture3.jpg" alt="Matcha Cookies" class="recipe-image">
+                    <div class="recipe-content">
+                        <h2>Recipe by CraveBite<h2>
+						<h3>MATCHA</h3>
+                    </div>
+                </div></td>
+    <td><a href="nutella.html">
+                <div class="recipe-box">
+                    <img src="gmbr/picture4.jpg" alt="Nutella Cookies" class="recipe-image">
+                    <div class="recipe-content">
+                        <h2>Recipe by CraveBite<h2>
+						<h3>NUTELLA</h3>
+                    </div>
+                </div></td>
+  
+</table>
+
+<footer>
+        
+		<table border="0" bgcolor="#887341" align="center" width="1350">
+		<tr>
+		<td><p align="center"><b>This page was developed by Nur Farah Anis, 2021493168.</b></td>
+		</tr>
+		</table>
+</footer>
+	 <p><a href="#top"><img src="gambar/up2.png" width="30" height="30" align="center"></a></p>
+
+
+	</body>
+</html>

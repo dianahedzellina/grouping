@@ -1,0 +1,236 @@
+<html>
+	<head>
+		<title>CraveBite Cookies Website</title>
+		<style>
+			body {background: ##F5DEB3;}
+
+			h1 { margin: 10;
+			font-size: 30px;
+			text-align: center;}
+
+			p {margin-top: 30px;
+			text-align: justify;}
+
+			a { text-decoration: none;}
+
+			#header-menu {
+			background-color: #F5DEB3;
+			width: 100vw;
+			height: 100px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: space-between;}
+
+			#menu {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5px 15px;
+			border-radius: 10px;
+			background-color: #F5DEB3;
+			margin: 0 auto;}	
+
+			#menu ul {margin: 0;
+			padding: 0;
+			list-style: none;}
+
+			#menu li {display: inline-block;}
+
+			#menu li a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;}
+
+			button {
+			background: #452a19;
+			color: white;
+			text-decoration: none;
+			border: 2px solid transparent;
+			font-weight: bold;
+			padding: 11px 30px;
+			border-radius: 30px;
+			transition: .4s;
+			text-align: center;
+			display: block;
+			margin: 50px auto;}
+
+			#content {
+			display: flex;
+			justify-content: space-around;
+			width: 60%;
+			margin: 0 auto;}
+
+			img {
+			max-width: 300px;
+			height: auto;
+			margin: 10px;
+			opacity: 0; }
+
+			/* Animation for the first image */
+			img:nth-child(1) {
+			animation: slideFromLeft 1s ease-out forwards;}
+
+			/* Animation for the second image */
+			img:nth-child(2) {
+			animation: slideFromBottom 1s ease-out forwards;}
+
+			/* Animation for the third image */
+			img:nth-child(3) {
+			animation: slideFromRight 1s ease-out forwards;}
+
+			@keyframes slideFromLeft {
+			from {transform: translateX(-100%);}
+			to {transform: translateX(0);
+			opacity: 1;}}
+
+			@keyframes slideFromBottom {
+			from {transform: translateY(100%);}
+			to {transform: translateY(0);
+			opacity: 1;}}
+
+			@keyframes slideFromRight {
+			from {transform: translateX(100%);}
+			to {transform: translateX(0);
+			opacity: 1;}
+			
+			body {
+			margin: 0;
+			padding: 0;
+			}
+
+			/* Style the main header */
+			.main-header {
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			}
+
+			/* Style the left section */
+			.left-section {
+			display: flex;
+			align-items: center;
+			}
+
+			.logo {
+			height: 50px;
+			width: 50px;
+			margin-right: 10px;
+			}
+
+			.brand-name {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			color: brown;
+			font-size: 18px;
+			}
+
+			/* Style the navigation bar */
+			nav {
+			flex-grow: 1;
+			text-align: center;
+			}
+
+			ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			}
+
+			li {
+			margin-right: 15px;
+			}
+
+			a {
+			text-decoration: none;
+			color: #887341;
+			font-weight: bold;
+			}
+
+			/* Style the right section */
+			.right-section {
+			text-align: right;
+			}
+			
+			.order-button {
+			background-color: #ffffff;
+			padding: 10px 40px;
+			border: none;
+			border-radius: 8px;
+			color: #887341;
+			text-decoration: none;
+			font-weight: bold;
+			cursor: pointer;
+			}
+
+			/* Style the dropdown container */
+			.dropdown {
+			display: inline-block;
+			position: relative;
+			}
+
+			/* Style the dropdown content (hidden by default) */
+			.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			}
+
+			/* Style the dropdown links */
+			.dropdown-content a {
+			color: #333;
+			padding: 1px 10px;
+			display: block;
+			text-decoration: none;
+			}
+
+			/* Change color on hover */
+			.dropdown-content a:hover {
+			background-color: #ddd;
+			}
+
+			/* Show the dropdown content when hovering over the dropdown container */
+			.dropdown:hover .dropdown-content {
+			display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header-menu">
+
+				<div id="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutus.html">About us</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="recipee.html">Recipe</a></li>
+						<li><a href="contactus.html">Contact us</a></li>
+						
+					</ul>
+				</div>
+			</div>
+				<br></br>
+				<br></br>
+				<br></br>
+				<h1>🍪  𝓒𝓡𝓐𝓥𝓔𝓑𝓘𝓣𝓔 𝓒𝓞𝓞𝓚𝓘𝓔𝓢 🍪</h1>
+				<h1>🍪  𝓞𝓝𝓔 𝓢𝓦𝓔𝓔𝓣 𝓣𝓡𝓔𝓐𝓣 , 𝓦𝓗𝓐𝓣'𝓢 𝓨𝓞𝓤𝓡 𝓘𝓝𝓓𝓤𝓛𝓖𝓔𝓝𝓒𝓔 ? 🍪</h1>
+				<div id="content">
+					<img src="nutellacookies.jpg" alt="Picture 1">
+					<img src="matchacookies.jpg" alt="Picture 2">
+					<img src="hazelnutcookies.jpg" alt="Picture 3">
+				</div>
+					<h1 align="center">🤎 𝓗𝓪𝓷𝓭 𝓶𝓪𝓭𝓮 𝔀𝓲𝓽𝓱 𝓵𝓸𝓿𝓮 🤎</h1>
+					<h1 align="center"> (๑ᵔ⤙ᵔ๑)  𝘾𝙧𝙖𝙫𝙚𝘽𝙞𝙩𝙚 𝘾𝙤𝙤𝙠𝙞𝙚𝙨 !!! 𝙐𝙢𝙢 𝙣𝙪𝙢 𝙣𝙪𝙢 𝙣𝙪𝙢 𝙣𝙪𝙢 !!! (๑ᵔ⤙ᵔ๑)</h1>
+				
+
+	<p align="center"><b>This Website is developed for IMD311 Grouping Assignment,by Nur Irdina.</b>			
+	</div>
+	</body>
+</html>
